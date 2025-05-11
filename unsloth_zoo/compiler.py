@@ -300,6 +300,7 @@ def create_new_function(
     imports = "from torch import Tensor\n"
     imports += "import torch\n"
     imports += "import torch.nn as nn\n"
+    imports += "from typing import Any\n"
     imports += "from torch.nn import functional as F\n"
     imports += f"from {model_location} import (" + ", ".join(x for x in items) + ")" if len(items) != 0 else ""
     new_source = imports + "\n\n" + new_source
