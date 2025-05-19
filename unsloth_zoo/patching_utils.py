@@ -189,6 +189,7 @@ def patch_model_and_tokenizer(
     downcast_rope = True,
     fix_embeddings = True,
     do_forced_float32 = False,
+    correct_dtype = None,
 ):
     # All Unsloth Zoo code licensed under LGPLv3
     assert(type(downcast_rope) is bool)
